@@ -4,8 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>คุ้มก่อนกด — Deals</title>
+  <meta name="description" content="รีวิวของใช้ในบ้านคุ้มๆ ราคาไม่แพง คัดมาให้ก่อนกด — พิธีกร Neo" />
   <meta name="theme-color" content="#0e0e10" />
-  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="คุ้มก่อนกด — Deals" />
+  <meta property="og:description" content="รีวิวของใช้ในบ้านคุ้มๆ ราคาไม่แพง คัดมาให้ก่อนกด" />
+  <meta property="og:image" content="assets/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="assets/og.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -22,14 +33,34 @@
     </div>
   </div>
 
+  <div class="channel-banner" aria-hidden="false">
+    <picture>
+      <source
+        type="image/webp"
+        srcset="assets/banner-1200.webp 1200w, assets/banner.webp 1600w"
+        sizes="100vw" />
+      <source
+        type="image/jpeg"
+        srcset="assets/banner-1200.jpg 1200w, assets/banner.jpg 1600w"
+        sizes="100vw" />
+      <img
+        src="assets/banner.jpg"
+        width="1600"
+        height="900"
+        alt="แบนเนอร์ช่องคุ้มก่อนกด — Neo และโลโก้"
+        decoding="async"
+        fetchpriority="high" />
+    </picture>
+  </div>
+
   <header class="hero">
     <div class="blob b1" aria-hidden="true"></div>
     <div class="blob b2" aria-hidden="true"></div>
     <div class="hero-main">
-      <div class="neo-wrap">
+      <div class="avatar-wrap" aria-hidden="false">
         <picture>
-          <source srcset="assets/neo_cutout.webp" type="image/webp" />
-          <img src="assets/neo_cutout.png" width="92" height="92" alt="Neo พิธีกรช่องคุ้มก่อนกด" />
+          <source srcset="assets/logo.webp" type="image/webp" />
+          <img src="assets/logo.png" width="92" height="92" alt="โลโก้คุ้มก่อนกด" />
         </picture>
       </div>
       <div class="hero-txt">
