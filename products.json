@@ -1,0 +1,38 @@
+[
+  {
+    "id": "botare-tissue",
+    "name": "Botare ทิชชู่หนา 4 ชั้น 20 ห่อ",
+    "note": "หนานุ่ม ใช้เปลืองได้ยาว คุ้มมากสำหรับบ้านใหญ่",
+    "image": "assets/products/botare.jpg",
+    "url": "https://s.shopee.co.th/5VWeKP65so",
+    "category": "ของใช้ในบ้าน",
+    "badge": "ขายดี"
+  },
+  {
+    "id": "bedside-lamp",
+    "name": "โคมไฟข้างเตียง LED",
+    "note": "แสงนุ่ม ปรับโหมดได้ วางหัวเตียงหรือโต๊ะทำงาน",
+    "image": "assets/products/lamp.jpg",
+    "url": "https://s.shopee.co.th/8VAFtwTbWZ",
+    "category": "ของใช้ในบ้าน",
+    "badge": "แนะนำ"
+  },
+  {
+    "id": "oriental-princess-mist",
+    "name": "Oriental Princess Linen Mist 250 ml",
+    "note": "ฉีดผ้าห่ม โซฟา ผ้าม่าน กลิ่นสะอาดสดชื่น",
+    "image": "assets/products/mist.jpg",
+    "url": "https://s.shopee.co.th/4qGxXJ14NR",
+    "category": "ความงาม",
+    "badge": "ใหม่"
+  },
+  {
+    "id": "antiant-gel",
+    "name": "ANTIANT เจลกำจัดมด",
+    "note": "เหยื่อเจลให้มดขนกลับรัง ไม่ใช่สเปรย์ ต้องรอผล",
+    "image": "assets/products/antiant.jpg",
+    "url": "https://s.shopee.co.th/1BZ2y3YbN",
+    "category": "อื่นๆ",
+    "badge": "ขายดี"
+  }
+]
