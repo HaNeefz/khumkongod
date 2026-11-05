@@ -119,6 +119,54 @@ img { max-width: 100%; display: block; }
   white-space: nowrap;
 }
 
+
+/* —— Channel header banner (YouTube-like) —— */
+.channel-banner {
+  width: 100%;
+  background: #0a0a0c;
+  line-height: 0;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+}
+.channel-banner::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 28%;
+  background: linear-gradient(to top, rgba(14,14,16,.55), transparent);
+  pointer-events: none;
+}
+.channel-banner picture,
+.channel-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  /* Keep Neo (right) + logo text (left) in frame on all widths */
+  object-position: center center;
+  background: #1a1008;
+}
+@media (max-width: 480px) {
+  /* Full 16:9 width so Neo + logo stay visible; soft fade into dark theme */
+  .channel-banner img {
+    object-position: 55% center;
+  }
+}
+@media (min-width: 960px) {
+  .channel-banner {
+    /* Cap visual height a bit on wide screens while keeping composition */
+    max-height: 420px;
+  }
+  .channel-banner img {
+    width: 100%;
+    height: min(420px, 56.25vw);
+    object-fit: cover;
+    object-position: center 40%;
+  }
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -126,7 +174,8 @@ img { max-width: 100%; display: block; }
     radial-gradient(ellipse 70% 80% at 15% 20%, #FF7A0028, transparent 55%),
     radial-gradient(ellipse 50% 60% at 90% 80%, #EE4D2D18, transparent 50%),
     linear-gradient(160deg, #1a1410 0%, var(--bg2) 100%);
-  padding: 22px 16px 20px;
+  padding: 18px 16px 18px;
+  margin-top: -2px; /* sit flush under banner fade */
   animation: fadeUp .65s ease both;
 }
 .hero-main {
@@ -143,14 +192,14 @@ img { max-width: 100%; display: block; }
 .blob.b1 { width: 160px; height: 160px; background: #FF7A0055; top: -40px; right: 10%; }
 .blob.b2 { width: 120px; height: 120px; background: #EE4D2D44; bottom: -30px; left: 8%; animation-delay: -3s; }
 
-.neo-wrap {
+.avatar-wrap {
   position: relative;
   z-index: 1;
   flex-shrink: 0;
   width: 96px; height: 96px;
   animation: floatY 4.2s ease-in-out infinite;
 }
-.neo-wrap::before {
+.avatar-wrap::before {
   content: "";
   position: absolute;
   inset: -4px;
@@ -159,17 +208,19 @@ img { max-width: 100%; display: block; }
   animation: spin 6s linear infinite;
   z-index: 0;
 }
-.neo-wrap img {
+.avatar-wrap img {
   position: relative;
   z-index: 1;
   width: 100%; height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
+  background: #FF7A00;
   border: 3px solid var(--bg2);
   box-shadow: 0 8px 24px rgba(255, 122, 0, .25);
 }
-.reduce-motion .neo-wrap,
-.reduce-motion .neo-wrap::before { animation: none; }
+.reduce-motion .avatar-wrap,
+.reduce-motion .avatar-wrap::before { animation: none; }
 
 .hero-txt { position: relative; z-index: 1; flex: 1; min-width: 0; }
 .hero-txt .pill {
@@ -368,7 +419,7 @@ img { max-width: 100%; display: block; }
 @media (min-width: 640px) {
   .hero { padding: 28px 28px 26px; }
   .hero-main { gap: 28px; }
-  .neo-wrap { width: 120px; height: 120px; }
+  .avatar-wrap { width: 120px; height: 120px; }
   .hero-txt h1 { font-size: 1.55rem; }
   .hero-txt p { font-size: .95rem; }
   .socials {
@@ -400,7 +451,7 @@ img { max-width: 100%; display: block; }
 
   .hero { padding: 40px 40px 36px; }
   .hero-main { gap: 40px; align-items: center; }
-  .neo-wrap { width: 148px; height: 148px; }
+  .avatar-wrap { width: 148px; height: 148px; }
   .hero-txt .pill { font-size: .8rem; padding: 4px 12px; margin-bottom: 10px; }
   .hero-txt h1 { font-size: 2rem; max-width: 18ch; }
   .hero-txt p { font-size: 1.05rem; max-width: 36ch; }
