@@ -1,5 +1,41 @@
 [
   {
+    "id": "ep02-food-covers",
+    "name": "ถุงครอบอาหารยืดได้ 100 ใบ",
+    "note": "ดึงครอบชามจานแก้วได้เลย กันแมลง — ใช้แล้วทิ้ง อย่าอุ่นทั้งถุง",
+    "image": "assets/products/ep02.jpg",
+    "url": "https://s.shopee.co.th/1gJo8npyzb",
+    "category": "ของใช้ในครัว",
+    "badge": "คุ้ม"
+  },
+  {
+    "id": "ep03-garlic-chopper",
+    "name": "เครื่องบดกระเทียมแบบดึงเชือก",
+    "note": "ดึงไม่กี่ทีกระเทียมละเอียด ใบมีดสแตนเลส 304 — ขนาด 170 มล. ใส่ทีละนิด",
+    "image": "assets/products/ep03.jpg",
+    "url": "https://s.shopee.co.th/8pn0fq2jf6",
+    "category": "ของใช้ในครัว",
+    "badge": "ขายดี"
+  },
+  {
+    "id": "ep04-oil-pot",
+    "name": "หม้อกรองน้ำมันสแตนเลส 304 1.3L",
+    "note": "เทน้ำมันผ่านตะแกรง กากค้างหมด มีฝาปิดกันฝุ่น — รอน้ำมันเย็นก่อนเท",
+    "image": "assets/products/ep04.jpg",
+    "url": "https://s.shopee.co.th/3LS5S5E4EB",
+    "category": "ของใช้ในครัว",
+    "badge": "แนะนำ"
+  },
+  {
+    "id": "ep06-magnetic-shelf",
+    "name": "ชั้นแม่เหล็กติดข้างตู้เย็น ABC",
+    "note": "แปะข้างตู้เย็น ไม่ต้องเจาะ มีตะขอแขวนทัพพี — ติดได้เฉพาะผิวเหล็ก",
+    "image": "assets/products/ep06.jpg",
+    "url": "https://s.shopee.co.th/6q23VtsXKD",
+    "category": "ของใช้ในครัว",
+    "badge": "ใหม่"
+  },
+  {
     "id": "botare-tissue",
     "name": "Botare ทิชชู่หนา 4 ชั้น 20 ห่อ",
     "note": "หนานุ่ม ใช้เปลืองได้ยาว คุ้มมากสำหรับบ้านใหญ่",
